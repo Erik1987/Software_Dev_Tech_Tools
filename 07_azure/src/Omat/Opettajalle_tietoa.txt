@@ -1,0 +1,17 @@
+// test.mosquitto.org portilla 1883 ilmeni ongelmia, jotka eivät
+   johtuneet minusta eikä index.js skriptin sisällöstä.
+   Aluksi kaikki toimi mutta tuntien testaamisen jälkeen publishauksessa
+   tuli virhe että pääsy evätty ym.
+
+bash comennolla:
+mqtt subscribe -h test.mosquitto.org -p 1883 -l mqtt -v -t "/swd4tn023/ERIK_TIE_TESTI_POLIISINA/traffic/#"
+ 
+{ Error: connect ECONNREFUSED 5.196.95.208:1883
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1107:14)
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '5.196.95.208',
+  port: 1883 }
+
+Muutenkin on riskiä käyttää suojaamattomia yhteyksiä.

@@ -1,0 +1,12 @@
+autopep8==1.5.4
+packaging==20.4
+pexpect==4.6.0
+pylint==2.6.0
+pytest==6.0.2
+pytest-mock==3.3.1
+python-dateutil==2.7.3
+PyYAML==5.3.1
+reportlab==3.5.34
+requests==2.22.0
+rope==0.17.0
+

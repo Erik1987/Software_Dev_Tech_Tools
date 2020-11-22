@@ -1,0 +1,7 @@
+Azure will allow you to either log in with a password, a private key or it can create a new private key for you. If you are using private keys and Linux, you will most likely need to restrict the access to the key file to the owner:
+
+$ chmod 600 my_private_key.pem
+
+A new SSH connection to the server can be made with the private key, username and server's IP address as follows:
+
+$ ssh -i my_private_key.pem username@your.ip.address.here

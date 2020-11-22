@@ -1,0 +1,94 @@
+
+  1.  Mitkä seuraavista ovat hyvän arkkitehtuurin tunnusmerkkejä 
+tietyssä ohjelmistojärjestelmässä (valitse yksi tai useampi)?
+
+    Järjestelmä on helposti ymmärrettävä
+    Järjestelmä on helposti jatkokehitettävä
+    Järjestelmä on helposti ylläpidettävä
+    Järjestelmä on helposti deployattava
+
+vastaus: 
+    - Tekee järjestelmästä helposti ymmärrettävän
+    - Tekee järjestelmästä helposti kehitettävän
+    - Tekee järjestelmästä helposti ylläpidettävän
+    - Tekee järjestelmästä helposti deployattavan
+    - Minimoi järjestelmän elinkaarikustannukset
+    - Maksimoi ohjelmoijien tuottavuuden (Martin R. Clean Architecture)
+
+
+   2. Mitkä seuraavista ovat hyvän arkkitehtuurisuunnittelun periaatteita, joita sovelletaan järjestelmän komponenttien suunnittelussa (valitse yksi tai useampi)?
+
+    Loose coupling
+    High integrity
+    Low fidelity
+    High cohesion
+
+vastaus:
+	- loose coupling
+	- high cohesion
+
+   3. Open-Closed periaatteen (OCP) mukaisesti (valitse yksi tai useampi):
+
+    Kaikille järjestelmän toimijoille (stakeholder tai actor) tulisi rakentaa oma luokka (class).
+    Järjestelmän komponenteilla tai luokilla tulisi olla vain yksi syy muutokseen.
+    Järjestelmän osien tulisi olla avoimia laajennuksille, mutta suljettuja muutoksille.
+
+vastaus: 
+	- Järjestelmän osien tulisi olla avoimia laajennuksille, mutta suljettuja muutoksille.
+
+   4. Mitkä seuraavista asioista ovat arkkitehtuurisuunnittelun näkökulmasta suhteellisen epäoleellisia asioita ja joihin liittyviä päätöksiä voi lykätä suunnittelussa pidemmälle (valitse yksi tai useampi)?
+
+    Tietokannan toteutustekniikka
+    Järjestelmän eri sidosryhmien tarpeiden ja tavoitteiden ymmärtäminen
+    Järjestelmän lopullinen jakelukanava (web, mobiili, ….)
+
+vastaus:
+
+	- Tietokannan toteutustekniikka
+	- Järjestelmän lopullinen jakelukanava (web, mobiili, ….)
+
+   5. Mikä seuraavista on olio-ohjelmointiparadigman tärkein anti ohjelmistoarkkitehtuureihin (valitse yksi)?
+
+    Kapselointi (encapsulation)
+    Monimuotoisuus (polymorfismi)
+    Event sourcing
+    Ohjelman pilkkominen osiin (decomposition)
+
+vastaus:
+
+	- Kapselointi (encapsulation)
+	- Monimuotoisuus (polymorfismi)
+
+   6. Spring-sovelluskehys seuraa ennen kaikkea mitä ohjelmointiparadigmaa (valitse yksi)?
+
+    Funktionaalinen ohjelmointi
+    Olio-ohjelmointi
+    Strukturoitu ohjelmointi
+    Reaktiivinen ohjelmointi
+
+vastaus:
+
+	- olio-ohjelmointi
+
+  7.  Mitkä seuraavista ovat mahdollisia arkkitehtuurikaavion näkökulmia (valitse yksi tai useampi)?
+
+    Sekvenssikaavio
+    Luokkakaavio
+    Komponenttitason järjestelmäarkkitehtuurikaavio
+
+vastaus:
+
+	-kaikki em.
+
+  8.  Mitkä seuraavista ovat mikropalveluarkkitehtuurin hyötyjä (valitse yksi tai useampi)?
+
+    Kehitystiimien itsenäisyys
+    Tiimirajat ylittävä helppo virheiden paikallistaminen
+    Palveluiden versioiminen
+    Koko järjestelmän testaaminen
+
+vastaus:
+
+	- Kehitystiimien itsenäisyys
+
+

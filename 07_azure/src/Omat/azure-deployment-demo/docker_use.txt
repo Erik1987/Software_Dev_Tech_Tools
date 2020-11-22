@@ -1,0 +1,8 @@
+# how to use docker by bash commands:
+Docker bash commands:
+docker build -t <image.name> .
+docker run -p 3000:80 <image.name> -d FOREGROUND
+docker ps
+docker stop <partof_id>
+// port:vport is an example
+// add sudo only when needed

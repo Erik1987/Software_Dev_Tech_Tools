@@ -1,0 +1,2 @@
+Tässä vain on kansioita oikea projektia varten mutta kaikki ei ole käytössä
+\n Kansiorakenne vaan muistuttaa minua yleisestä node projektin rakenteesta

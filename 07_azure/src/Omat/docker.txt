@@ -1,0 +1,48 @@
+sudo docker build -t mqtttest .
+Sending build context to Docker daemon  43.52kB
+Step 1/8 : FROM node:12-slim
+12-slim: Pulling from library/node
+babf97a3f00a: Already exists 
+d81eb1809d95: Already exists 
+3f72ec46a92e: Already exists 
+a8a4b5f7319f: Already exists 
+39dcde4a46ff: Already exists 
+Digest: sha256:d1cad9227e3abd64f5fce754151bf9a452c60ae03430f8557367d7cffc41d2a9
+Status: Downloaded newer image for node:12-slim
+ ---> 1ca6947f3d2c
+Step 2/8 : WORKDIR /usr/src/app
+ ---> Running in f422c4004ef7
+Removing intermediate container f422c4004ef7
+ ---> f5d8314f4c02
+Step 3/8 : ENV PORT=80
+ ---> Running in 549b6cb4d9f3
+Removing intermediate container 549b6cb4d9f3
+ ---> b5ed49a5869e
+Step 4/8 : COPY package*.json ./
+ ---> b47232decb47
+Step 5/8 : RUN npm install
+ ---> Running in 1ebb1806e836
+npm WARN tehtavaMQTT@1.0.0 No description
+npm WARN tehtavaMQTT@1.0.0 No repository field.
+
+added 78 packages from 53 contributors and audited 78 packages in 2.579s
+
+4 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+Removing intermediate container 1ebb1806e836
+ ---> 77071aaafcf3
+Step 6/8 : COPY . ./
+ ---> 8dd723b2665a
+Step 7/8 : EXPOSE 80
+ ---> Running in 825bdca8db83
+Removing intermediate container 825bdca8db83
+ ---> ebeac0f189e3
+Step 8/8 : CMD [ "node", "index.js" ]
+ ---> Running in e8d7119964f7
+Removing intermediate container e8d7119964f7
+ ---> 179e05d0257d
+Successfully built 179e05d0257d
+Successfully tagged mqtttest:latest
